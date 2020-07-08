@@ -6,6 +6,8 @@
 # Licensed under GPLv3 https://www.gnu.org/licenses/gpl-3.0.txt
 #
 # Defaults if not set
+#set -euo pipefail
+export LC_ALL="C"
 interval=${interval:-0} # just in case it's started not by i3blocks
 stats=${stats:-usr nice sys iowait}
 format=${format:-%6.2f}
